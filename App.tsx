@@ -4,13 +4,13 @@
  *
  * @format
  */
-
+import Config from "react-native-config";
 import { StyleSheet, View, Text } from 'react-native';
 
 function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <Text>Hello World! {Config.API_URL} </Text>
     </View>
   );
 }
