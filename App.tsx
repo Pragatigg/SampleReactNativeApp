@@ -6,11 +6,14 @@
  */
 
 import { StyleSheet, View, Text } from 'react-native';
+import DeviceInfo from 'react-native-device-info';
 
 function App() {
+  const bundleId = DeviceInfo.getBundleId();
   return (
     <View style={styles.container}>
       <Text>Hello World!</Text>
+      <Text>Bundle ID: {bundleId}</Text>
     </View>
   );
 }
